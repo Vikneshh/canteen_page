@@ -1,0 +1,161 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background:url("https://images.unsplash.com/photo-1589988434425-757f48da27dc?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" ) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+#logo{
+   position: relative;
+    font-size: 36px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-indent: 5px;
+    letter-spacing: 2px;
+    color: rgb(51, 52, 52);
+    padding: 10px;
+    
+}
+#container{
+    min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+  
+
+}
+#social{
+    margin-left: 70%;
+    font-size: 25px;
+    line-height: 2;
+    letter-spacing: 13px;
+    padding-top: 20px;
+}
+#twitter,#insta,#facebook{
+    
+    color:black
+}
+#twitter:hover,#insta:hover,#facebook:hover{
+    color: rgb(61, 56, 57);
+}
+#order{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: rgb(90, 42, 42);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+/* #back{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color:black;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+} */
+#centered{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: radial-gradient(circle, rgba(238,174,202,1) 31%, rgba(148,187,233,1) 100%);
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    font-size: 3ch;
+}
+.cart{
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 25px;
+}
+.cartAmount{
+    font-size: 18px;
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    color: white;
+    background-color: red;
+    padding: 2px;
+    border-radius: 5px;
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,225px);
+    gap: 30px;
+    justify-content: center;
+   
+}
+
+/* Now we are gonna see about media queries to make the website reponsive*/
+
+@media(max-width:1000px)
+{
+    .shop{
+        grid-template-columns: repeat(2,225px);
+    }
+}
+
+@media(max-width:500px)
+{
+    .shop{
+        grid-template-columns: repeat(1,225px);
+    }
+}
+
+.item{
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: #6f6c6c;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+}
+.bi-dash-lg{
+   color: red;
+   cursor: pointer;
+}
+.bi-plus-lg{
+    color: rgb(5, 226, 5);
+   cursor: pointer;
+
+ }
+ #footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+ }
+
